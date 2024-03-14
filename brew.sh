@@ -63,16 +63,16 @@ $(brew --prefix)/bin/git config --global user.name "$git_user_name"
 $(brew --prefix)/bin/git config --global user.email "$git_user_email"
 
 # Create the tutorial virtual environment I use frequently
-$(brew --prefix)/bin/python3 -m venv "${HOME}/tutorial"
+#$(brew --prefix)/bin/python3 -m venv "${HOME}/tutorial"
 
 # Install Prettier, which I use in both VS Code and Sublime Text
-$(brew --prefix)/bin/npm install --global prettier
+#$(brew --prefix)/bin/npm install --global prettier
 
 # Define an array of applications to install using Homebrew Cask.
 apps=(
     "google-chrome"
     "firefox"
-    "sublime-text"
+    "notepad++"
     "visual-studio-code"
     "virtualbox"
     "spotify"
@@ -80,7 +80,6 @@ apps=(
     "google-drive"
     "vlc"
     "rectangle"
-    "postman"
 )
 
 # Loop over the array to install each application.
@@ -109,11 +108,11 @@ else
 fi
 
 # Once font is installed, Import your Terminal Profile
-echo "Import your terminal settings..."
-echo "Terminal -> Settings -> Profiles -> Import..."
-echo "Import from ${HOME}/dotfiles/settings/Pro.terminal"
-echo "Press enter to continue..."
-read
+#echo "Import your terminal settings..."
+#echo "Terminal -> Settings -> Profiles -> Import..."
+#echo "Import from ${HOME}/dotfiles/settings/Pro.terminal"
+#echo "Press enter to continue..."
+#read
 
 # Update and clean up again for safe measure
 brew update
@@ -121,17 +120,17 @@ brew upgrade
 brew upgrade --cask
 brew cleanup
 
-echo "Sign in to Google Chrome. Press enter to continue..."
-read
+#echo "Sign in to Google Chrome. Press enter to continue..."
+#read
 
-echo "Sign in to Spotify. Press enter to continue..."
-read
+#echo "Sign in to Spotify. Press enter to continue..."
+#read
 
-echo "Sign in to Discord. Press enter to continue..."
-read
+#echo "Sign in to Discord. Press enter to continue..."
+#read
 
-echo "Open Rectangle and give it necessary permissions. Press enter to continue..."
-read
+#echo "Open Rectangle and give it necessary permissions. Press enter to continue..."
+#read
 
-echo "Import your Rectangle settings located in ~/dotfiles/settings/RectangleConfig.json. Press enter to continue..."
-read
+#echo "Import your Rectangle settings located in ~/dotfiles/settings/RectangleConfig.json. Press enter to continue..."
+#read
