@@ -71,6 +71,8 @@ $(brew --prefix)/bin/git config --global user.email "$git_user_email"
 # Define an array of applications to install using Homebrew Cask.
 apps=(
     "google-chrome"
+    "google-drive"
+    "onedrive"
     "firefox"
     "notepad++"
     "visual-studio-code"
@@ -80,6 +82,8 @@ apps=(
     "google-drive"
     "vlc"
     "rectangle"
+    "obsidian"
+    "1password"
 )
 
 # Loop over the array to install each application.
